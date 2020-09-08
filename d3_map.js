@@ -3,8 +3,8 @@ var width = 800, height = 800;
 
 // SVG 要素追加
 var svg = d3.select("#map").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+.attr("width", width)
+.attr("height", height);
 
 // JSON データ読み込み
 d3.json("japan.topojson", function(json) {
