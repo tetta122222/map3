@@ -1,13 +1,13 @@
 // SVG サイズ設定
 var width = 800, height = 800;
-
+var d3 = require('../bower_components/d3/d3.min.js');
 // SVG 要素追加
 var svg = d3.select("#map").append("svg")
 .attr("width", width)
 .attr("height", height);
 
 // JSON データ読み込み
-var d3 = require('../bower_components/d3/d3.min.js');
+
 d3.json("japan.topojson", function(json) {
     var japan = topojson.object(json, json.objects.japan).geometries;
     // 投影法設定
