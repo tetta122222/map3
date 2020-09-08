@@ -1,6 +1,5 @@
 // SVG サイズ設定
 var width = 800, height = 800;
-var d3 = require('../bower_components/d3/d3.min.js');
 // SVG 要素追加
 var svg = d3.select("#map").append("svg")
 .attr("width", width)
