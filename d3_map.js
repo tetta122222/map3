@@ -9,7 +9,7 @@ var svg = d3.select("#map").append("svg")
 // JSON データ読み込み
 d3.json("japan.topojson", function(json) {
     var japan = topojson.object(json, json.objects.japan).geometries;
-
+    var d3 = require('../bower_components/d3/d3.min.js');
     // 投影法設定
     var projection = d3.geo.mercator()
         .center([138, 34])
