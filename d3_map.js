@@ -21,5 +21,5 @@ d3.json("japan.topojson", function(json) {
         .projection(projection);
 
     // 地図描画
-    svg.selectAll("path")
+    svg.selectAll("path");
 });
