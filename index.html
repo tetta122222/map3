@@ -5,11 +5,12 @@
     <svg></svg>
     <script src="d3.min.js" type="text/JavaScript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.20/topojson.min.js"></script>
+    
     <script>
       var width = 1200,
           height = 800;
       var scale = 40000;
-      d3.json("46201.topojson", createMap);
+      d3.json("/topojson/prefectures/46.topojson", createMap);
 
       function createMap(topoSaitama) {
         var geoSaitama = topojson.feature(topoSaitama, topoSaitama.objects[11]);　//TopoJSON=>GeoJSO変換
