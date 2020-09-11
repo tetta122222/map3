@@ -13,6 +13,7 @@
       d3.json("46.topojson");
 
       function createMap(topoSaitama) {
+        console.log( topojson );
         var geoSaitama = topojson.feature(topoSaitama, topoSaitama.objects[11]);　//TopoJSON=>GeoJSO変換
         var aProjection = d3.geoMercator()
             .center([ 139.5, 35.9 ])
